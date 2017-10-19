@@ -1,0 +1,128 @@
+@font-face {
+	font-family: 'Chirpus';
+	src: url('cicero sans negrita.ttf');
+}
+
+body {
+	font-family: "Chirpus", Arial, Helvetica, sans-serif;
+	background-color: rgb(249, 250, 254);
+}
+
+div.placeholder {
+	padding: 20px 15px;
+}
+
+header {
+	margin-bottom: 30px;
+}
+
+div.bannertitle {
+	font-size: .8em;
+	color: black;
+	text-transform: lowercase;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}		
+
+a {
+	text-decoration: none;
+	font-weight: normal;
+	color: rgb(117, 105, 105);
+	font-size: .8em;
+	margin-bottom: 10px;
+}
+
+.hire-button, .scroll-button {
+	display: block;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: black;
+	color: rgb(249, 250, 254);
+	font-size: .8em;
+	margin: 0;
+}
+
+h1 {
+	font-size: 1.6em;
+	text-align: left;
+	color: black;
+	margin: 0 0 .8em 0;
+}
+
+p.splashpage {
+	font-size: .8em;
+	color: rgb(117, 105, 105);
+	line-height: auto;
+	padding-left: 15px;
+	border-left: 2px solid rgb(204, 204, 206);
+	text-align: left;
+}
+
+div.maincontent {
+	margin-bottom: 30px;
+}
+
+form {
+	padding: 0;
+	margin: 0;
+}
+
+@media (min-width: 480px) {
+
+	div.placeholder {
+		max-width: 670px;
+		padding: 15px 20px;
+		margin: 0 auto;
+	}
+
+	header { /* This is for non-mobile devices only */
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 100px;
+	}
+
+	div.bannertitle {
+		margin-bottom: 0px;
+	}
+
+	nav {
+		align-items: baseline;
+		justify-content: flex-end;
+		flex-direction: row;
+	}	
+
+	a {
+		margin-right: 15px;
+		margin-bottom: 0;
+	}
+
+	.hire-button, .scroll-button {
+		width: 100px;
+	}
+
+	.scroll-button { /* For non-mobile devices only */
+		margin: 0 auto;
+	}
+
+	div.maincontent { /* For non-mobile devices only */
+		height: 250px;
+		width: 100%;
+		background: transparent url("/images/circles.jpg") no-repeat center right;
+		margin-bottom: 20px;
+	}
+
+	p.splashpage {
+		box-sizing: border-box;
+		width: 50%;
+	}
+	
+}
